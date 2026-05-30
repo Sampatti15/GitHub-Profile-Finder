@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#f5f7ff,#eef2ff,#f8f5ff);
+  min-height: 100vh;
+  color: #1e293b;
+}
+
+/* MAIN CONTAINER */
+
+.github-profile-container{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+/* TITLE WITH GITHUB ICON */
+
+.github-profile-container::before{
+  content: "GitHub Profile Finder";
+  display: block;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(to right,#2563eb,#9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SEARCH BAR */
+
+.input-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.input-wrapper input{
+  flex: 1;
+  height: 68px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 0 25px;
+  font-size: 18px;
+  font-weight: 500;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  color: #1e293b;
+}
+
+.input-wrapper input::placeholder{
+  color: #94a3b8;
+}
+
+.input-wrapper button{
+  height: 68px;
+  min-width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: linear-gradient(to right,#2563eb,#4f46e5,#9333ea);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(79,70,229,0.25);
+}
+
+.input-wrapper button:hover{
+  transform: translateY(-3px);
+}
+
+/* USER CARD */
+
+.user{
+  width: 100%;
+  background: rgba(255,255,255,0.72);
+  border-radius: 30px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* PROFILE IMAGE */
+
+.user img{
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255,255,255,0.8);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* NAME SECTION */
+
+.name-container{
+  flex: 1;
+}
+
+.name-container a{
+  text-decoration: none;
+  font-size: 46px;
+  font-weight: 700;
+  background: linear-gradient(to right,#2563eb,#9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name-container p{
+  margin-top: 12px;
+  font-size: 22px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* PROFILE INFO */
+
+.profile-info{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-info div{
+  width: 135px;
+  height: 135px;
+  background: rgba(255,255,255,0.65);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.profile-info div:hover{
+  transform: translateY(-5px);
+}
+
+.profile-info div:nth-child(1){
+  border: 2px solid #c4b5fd;
+}
+
+.profile-info div:nth-child(2){
+  border: 2px solid #86efac;
+}
+
+.profile-info div:nth-child(3){
+  border: 2px solid #93c5fd;
+}
+
+.profile-info div p:first-child{
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.profile-info div p:last-child{
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* LOADING */
+
+h1{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 35px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1100px){
+
+  .user{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info{
+    justify-content: center;
+  }
+
+  .name-container a{
+    font-size: 38px;
+  }
+}
+
+@media(max-width: 700px){
+
+  .input-wrapper{
+    flex-direction: column;
+  }
+
+  .input-wrapper input{
+    width: 100%;
+  }
+
+  .input-wrapper button{
+    width: 100%;
+  }
+
+  .user{
+    padding: 25px 18px;
+  }
+
+  .user img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .name-container a{
+    font-size: 30px;
+  }
+
+  .name-container p{
+    font-size: 18px;
+  }
+
+  .profile-info div{
+    width: 100%;
+  }
+}
