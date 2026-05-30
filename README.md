@@ -25,6 +25,7 @@ A modern React-based GitHub Profile Finder that allows users to search GitHub pr
 <img width="1892" height="903" alt="Screenshot" src="https://github.com/user-attachments/assets/313cdbe4-8d6a-402b-9267-99f00b2dc1fe" />
 
 
+
 Search any GitHub username and instantly get:
 
 - Profile Avatar
@@ -41,3 +42,10 @@ git clone https://github.com/Sampatti15/github-profile-finder.git
 cd github-profile-finder
 npm install
 npm run dev
+```
+
+## 🔗 API Used
+https://api.github.com/users/{username}
+
+
+
