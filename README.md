@@ -47,5 +47,7 @@ npm run dev
 ## 🔗 API Used
 https://api.github.com/users/{username}
 
+## 👩‍💻 Author
+Developed by Sampatti Borse
 
 
