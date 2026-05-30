@@ -1,16 +1,43 @@
-# React + Vite
+# 🚀 GitHub Profile Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based GitHub Profile Finder that allows users to search GitHub profiles and view profile details instantly using the GitHub API.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search any GitHub username
+- View profile picture
+- Display username and profile link
+- View account creation date
+- Public repositories count
+- Followers and following count
+- Responsive and modern UI
+- Fast API integration using GitHub REST API
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript 
+- CSS
+- GitHub REST API
+- Vite
 
-## Expanding the ESLint configuration
+## 📸 Preview
+<img width="1892" height="903" alt="Screenshot" src="https://github.com/user-attachments/assets/313cdbe4-8d6a-402b-9267-99f00b2dc1fe" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Search any GitHub username and instantly get:
+
+- Profile Avatar
+- Username
+- Join Date
+- Public Repositories
+- Followers
+- Following
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/Sampatti15/github-profile-finder.git
+cd github-profile-finder
+npm install
+npm run dev
